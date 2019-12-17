@@ -39,7 +39,7 @@ def substrings(a, b, n):
         return substring_list
 
     for i in substring(a, n):
-        if i in substring(b, n):
+        if i in substring(b, n) and not i in result:
             result.append(i)
 
     return (result)
