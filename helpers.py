@@ -32,7 +32,7 @@ def substrings(a, b, n):
         substring_list = []
         counter = 0
 
-        while counter < len(string) - n:
+        while counter + 1 < len(string) - n:
             sub = string[counter:counter + n]
             counter += 1
             substring_list.append(sub)
